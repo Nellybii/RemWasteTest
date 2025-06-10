@@ -1,4 +1,3 @@
-// SkipSelectorPage.js
 import React, { useEffect, useState } from 'react';
 import SkipCard from '../components/skipcard';
 
