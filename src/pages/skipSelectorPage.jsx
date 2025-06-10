@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import SkipCard from '../components/skipcard';
+import SkipCard from '../components/SkipCard';
 
 const SkipSelectorPage = () => {
   const [skips, setSkips] = useState([]);
