@@ -49,7 +49,6 @@ const SkipCard = ({ skip, selectedId, onSelect }) => {
       </div>
 
       <div className="text-right">
-        {/* No donation */}
         <button
           onClick={() => onSelect(skip.id)}
           className={`px-5 py-2 rounded-lg text-white font-medium shadow-md transition-all ${
