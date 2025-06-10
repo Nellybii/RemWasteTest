@@ -1,12 +1,41 @@
-# React + Vite
+# Skip Selector Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a front-end redesign of the "Choose your skip size", as part of a coding challenge. The goal was to visually transform the page, while maintaining all the original functionality, improving the UX/UI, and ensuring full responsiveness across mobile and desktop devices.
 
-Currently, two official plugins are available:
+## Approach
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Redesigned the UI
 
-## Expanding the ESLint configuration
+- Completely restructured the layout using ReactJS and Tailwind CSS for a clean and modern look.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Used cards to clearly separate and highlight each skip option.
+
+-  Improved spacing, color contrast, and typography for better readability.
+
+- Ensured selection state is clearly visible with a select button toggle.
+
+### Responsive Design
+
+- Used Tailwind’s responsive utility classes to ensure proper rendering on:
+
+    - Mobile (stacked layout).
+
+    - Desktop (flex layout for cards, centered content).
+
+### Functionality Kept Intact
+
+- Preserved:
+
+    - Data structure and logic.
+
+    - Select action with visual feedback.
+
+    - Pricing calculation using price_before_vat and vat.
+
+    - Skips are dynamically populated from the provided API: 'https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft'
+
+## Running The Code
+- git clone https://github.com/Nellybii/RemWasteTest
+- npm install
+- npm run dev 
+
